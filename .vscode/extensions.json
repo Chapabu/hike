@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "golang.go",
+    "MS-CEINTL.vscode-language-pack-en-GB",
+    "EditorConfig.EditorConfig",
+    "oderwat.indent-rainbow",
+    "VisualStudioExptTeam.vscodeintellicode",
+    "VisualStudioExptTeam.intellicode-api-usage-examples"
+  ]
+}
