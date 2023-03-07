@@ -1,0 +1,24 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  init:
+    desc: "Initialise project"
+    cmds:
+      - go mod download
+
+  test:
+      desc: "Run tests"
+      cmds:
+        - go test ./...
+
+  format:
+    desc: "Format code"
+    cmds:
+      - goimports -w ./
+
+  analyse:
+    desc: "Run analysis tools"
+    cmds:
+      - staticcheck ./...
