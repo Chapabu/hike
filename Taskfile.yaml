@@ -1,17 +1,16 @@
 # https://taskfile.dev
-
-version: '3'
+version: "3"
 
 tasks:
   init:
     desc: "Initialise project"
     cmds:
-      - go mod download
+      - go mod tidy
 
   test:
-      desc: "Run tests"
-      cmds:
-        - go test ./...
+    desc: "Run tests"
+    cmds:
+      - go test ./...
 
   format:
     desc: "Format code"
@@ -22,3 +21,18 @@ tasks:
     desc: "Run analysis tools"
     cmds:
       - staticcheck ./...
+
+  build:
+    desc: Run a local build for testing
+    cmds:
+      - goreleaser build --single-target --snapshot --clean
+
+  build:all:
+    desc: Run all builds
+    cmds:
+      - goreleaser build --snapshot --clean
+
+  run:
+    desc: Run hike
+    cmds:
+      - go run cmd/hike/main.go
