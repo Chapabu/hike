@@ -74,15 +74,13 @@ jobs:
   build:
     name: Build
 
-    strategy:
-      fail-fast: false
-      matrix:
-        os:
-          - windows-latest
-          - ubuntu-latest
-          - macOS-latest
+    needs:
+      - analyse
+      - test
 
-    runs-on: "${{ matrix.os }}"
+    # We don't need to build on anything other than Ubuntu, as the final
+    # builds will end up being done in Github Actions.
+    runs-on: "ubuntu-latest"
 
     steps:
       - name: Checkout
