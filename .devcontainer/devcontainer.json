@@ -9,13 +9,14 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "golang.go",
-        "MS-CEINTL.vscode-language-pack-en-GB",
-        "EditorConfig.EditorConfig",
-        "oderwat.indent-rainbow",
-        "VisualStudioExptTeam.vscodeintellicode",
-        "VisualStudioExptTeam.intellicode-api-usage-examples"
-      ]
+		"golang.go",
+		"MS-CEINTL.vscode-language-pack-en-GB",
+		"EditorConfig.EditorConfig",
+		"oderwat.indent-rainbow",
+		"VisualStudioExptTeam.vscodeintellicode",
+		"VisualStudioExptTeam.intellicode-api-usage-examples",
+		"redhat.vscode-yaml"
+	]
     }
   },
 
