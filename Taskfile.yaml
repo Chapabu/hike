@@ -20,6 +20,7 @@ tasks:
   analyse:
     desc: "Run analysis tools"
     cmds:
+      - go vet ./...
       - staticcheck ./...
 
   build:
